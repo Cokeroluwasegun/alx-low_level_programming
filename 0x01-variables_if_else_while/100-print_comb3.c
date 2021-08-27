@@ -1,7 +1,7 @@
 #include <stdio.h>
 /**
  * main - Entry block
- * 
+ * print combo
  * Return: 0 (Sucess)
 **/
 int main(void)
