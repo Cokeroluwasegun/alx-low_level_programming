@@ -3,9 +3,9 @@
 #include <time.h>
 /**
  * main - Entry point
- * last digit
+ * last digits
  * Return Always 0 (Success)
- */
+*/
 int main(void)
 {
 int n, a;
