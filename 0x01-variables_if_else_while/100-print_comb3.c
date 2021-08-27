@@ -4,20 +4,29 @@
  *
  * Return: Always 0 (Success)
  */
+#include <stdio.h>
+/**
+ * main - entry block
+ * @void: no argument
+ * Return: 0 (Sucess)
+**/
 int main(void)
 {
-int i, j;
-for (i = '0'; i <= '9'; i++)
-for (j = '0' ; j <= '9' ; j++)
+int x, z;
+for (x = '0'; x <= '8'; x++)
+for (z = x + 1; z <= '9'; z++)
 {
-putchar (i);
-putchar (j);
-if (i != '9' || j != '9')
+if (x != z)
 {
-putchar (',');
-putchar (' ');
+putchar(x);
+putchar(z);
+if (x != '8' || z != '9')
+{
+putchar(',');
+putchar(' ');
 }
 }
-putchar ('\n');
+}
+putchar('\n');
 return (0);
 }
