@@ -6,8 +6,8 @@
  */
 #include <stdio.h>
 /**
- * main - entry block
- * @void: no argument
+ * main - Entry block
+ * 
  * Return: 0 (Sucess)
 **/
 int main(void)
