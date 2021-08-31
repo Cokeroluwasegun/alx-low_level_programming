@@ -1,7 +1,7 @@
 #include "main.h"
 /**
- * print alphabet - entry point
- * @c: char to checkt
+ * print_alphabet - entry point
+ * print alphabet
  * Return: Always 0.
  */
 void print_alphabet(void)
