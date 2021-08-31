@@ -7,11 +7,11 @@
 int main(void)
 {
 int i;
-char hb[] = "Holberton";
+char c[] = "Holberton";
 for (i = 0; i < 9; i++)
 {
-putchar(hb[i]);
+_putchar(c[i]);
 }
-putchar('\n');
+_putchar('\n');
 return (0);
 }
