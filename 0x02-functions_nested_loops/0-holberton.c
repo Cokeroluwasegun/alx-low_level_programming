@@ -1,4 +1,4 @@
-#include "holberton.h"
+#include "main.h"
 /**
  * main - check the code for Holberton School students.
  *
@@ -10,8 +10,8 @@ int i;
 char hb[] = "Holberton";
 for (i = 0; i < 9; i++)
 {
-_putchar(hb[i]);
+putchar(hb[i]);
 }
-_putchar('\n');
+putchar('\n');
 return (0);
 }
