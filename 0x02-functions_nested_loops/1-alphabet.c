@@ -1,10 +1,9 @@
 #include "main.h"
 /**
  * print alphabet - Entry point
- * print alphabet
- * Return: Always 0.
+ * print alphabet is prototype
+ * Return: Always 0 (Success)
  */
-/* print alphabet function is a prototype*/
 void print_alphabet(void)
 {
 int i;
