@@ -1,18 +1,18 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-#include "main.h"
 /**
- * positive_or_negative - Entry point
- * positive_or_negative
+ * positive or negative - Entry point
+ * positive or negative
  * Return: Always 0.
  */
 void positive_or_negative(int i)
 {
-if (i > 10)
-printf("%d is positive", i);
-else if ( i == 0)
-printf("%d is zero", i);
+if (i == 0)
+printf("%d is zero\n", i);
+else
+if (i > 0)
+printf("%d is positive\n", i);
 else
 printf("%d is negative\n", i);
 }
