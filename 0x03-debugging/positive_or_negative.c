@@ -9,9 +9,9 @@
  */
 void positive_or_negative(int i)
 {
-if (n > 10)
+if (i > 10)
 printf("%d is positive", i);
-else if ( n == 0)
+else if ( i == 0)
 printf("%d is zero", i);
 else
 printf("%d is negative\n", i);
