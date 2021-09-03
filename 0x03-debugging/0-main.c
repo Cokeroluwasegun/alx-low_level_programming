@@ -1,10 +1,9 @@
 #include "main.h"
 /**
- *  0-main - main
+ * 0-main - main
  * 
  * Return: 0
  */
-
 int main(void)
 {
 int i;
