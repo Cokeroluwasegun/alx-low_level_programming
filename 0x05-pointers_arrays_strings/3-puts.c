@@ -4,7 +4,7 @@
  * @str: string to print
  * Return: void
  */
-void _putchar(char *str)
+void _put(char *str)
 {
 int i = 0;
 while (*(str + i) != '\0')
