@@ -1,19 +1,17 @@
-#include "main.h"
 /**
- * string_toupper - change all lowercase to uppercase
- * @n: pointer
- *
- * Return: n
- */
-char *string_toupper(char *n)
+* string_toupper - copie n bytes of a string
+* @s: The destination string
+* Return: s.
+*/
+char *string_toupper(char *s)
 {
-int i;
-i = 0;
-while (n[i] != '\0')
-{
-if (n[i] >= 'a' && n[i] <= 'z')
-n[i] = n[i] -32;
+int i = 0, j;
+while (s[i])
 i++;
+for (j = 0; j < i; j++)
+{
+if (s[j] >= 97 && s[j] <= 122)
+s[j] -= 32;
 }
-return (n);
+return (s);
 }
