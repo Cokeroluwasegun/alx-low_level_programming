@@ -1,13 +1,6 @@
 #include "main.h"
 #include <stdio.h>
 /**
-* _memset - fills memory with a constant byte.
-* @s: the memory area to print in
-* @b: the constant to print
-* @n: the num of bytes to fill
-* Return: s.
-*/
-/**
  * _strpbrk - searches a string
  * @s: string
  * @accept: string
