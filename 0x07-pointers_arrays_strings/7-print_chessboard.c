@@ -1,10 +1,10 @@
 #include "main.h"
 #include <stdio.h>
- /**
-  * print_chessboard - fills memory with a constant byte
-  * @a: the memory to print in
-  * Return: void
-  */
+/**
+ * print_chessboard - fills memory with a constant byte
+ * @a: the memory to print in
+ * Return: void
+ */
 void print_chessboard(char (*a)[8])
 {
 int i, j;
