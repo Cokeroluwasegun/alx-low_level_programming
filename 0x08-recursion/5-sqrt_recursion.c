@@ -1,29 +1,28 @@
 #include "main.h"
-#include <stdio.h>
 /**
 *_sqrt_recursion - natural square
 * @n : int
 * Return: int
 */
-int _squrt_recursion(int n)
+int _sqrt_recursion(int n)
 {
-if (n < 0)
-return (-1);
+if (n >= 1)
+return (test_sqrt(n, (n / 2) + 1));
 else
-return (sqrtchecker(n, (n + 1) / 2));
+return (-1);
 }
 /**
-* sqrCheck - test natural square.
-* @a: the memory area to print in
-* @b: to busy for desc :(
-* Return: int.
+*test_sqrt - test natural squar
+* @a : int
+* @b : int
+* Return: int
 */
-int sqrtchecker(int a, int b)
+int test_sqrt(int a, int b)
 {
-if (b * b ==a)
+if (b * b == a)
 return (b);
-else if (b == 1)
+else if (b < 0)
 return (-1);
 else
-return(sqrtchecker(a, b -1));
+return (test_sqrt(a, b - 1));
 }
