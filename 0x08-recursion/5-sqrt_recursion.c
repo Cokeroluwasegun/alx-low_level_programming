@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 /**
 *_sqrt_recursion - natural square
 * @n : int
