@@ -9,7 +9,7 @@ int _squrt_recursion(int n)
 if (n < 0)
 return (-1);
 else
-return(sqrtchecker(n, (n + 1) / 2));
+return (sqrtchecker(n, (n + 1) / 2));
 }
 /**
 * sqrCheck - test natural square.
