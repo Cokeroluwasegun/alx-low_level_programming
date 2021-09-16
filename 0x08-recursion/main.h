@@ -14,4 +14,6 @@ int premier(int a, int b);
 int longueur(char *s);
 int check(char *s, int a, int b);
 int is_palindrome(char *s);
+int wildcmp(char *s1, char *s2);
+
 #endif
