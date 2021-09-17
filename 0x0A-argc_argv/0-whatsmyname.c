@@ -1,10 +1,10 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
- * main - prints its name followed by a new line
+ * main - prints name of program
  * @argc - integer count
- * @argv[] - pointer array
- * Return 0.
+ * @argv - pointer array
+ * Return: int
  */
 int main(int argc, char* argv[])
 {
