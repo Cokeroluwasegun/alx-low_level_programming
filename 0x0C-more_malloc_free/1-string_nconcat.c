@@ -1,42 +1,38 @@
 #include "main.h"
-#include <stdio.h>
 #include <stdlib.h>
-#include <limits.h>
-
 /**
-* string_nconcat - check the code for Holberton School students.
-* @s1: qsdqsdq
-* @s2: qsdqsdq
-* @n: qsdqsdq
-* Return: Always 0.
-*/
+ * *string_nconcat - concatenates two strings
+ * @s1: first string
+ * @s2: second string
+ * @n: limit of s2
+ * Return: pointer to new space in memory or null
+ **/
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-unsigned int size = 0;
-unsigned int size2 = 0;
-unsigned int i = 0;
-char *r;
-if (s1 != NULL)
-{
-while (s1[size] != '\0')
-size++;
-}
-if (s2 != NULL)
-{
-while (s2[size2] != '\0')
-size2++;
-}
-if (n > size2)
-n = size2;
-else
-size2 = n;
-r = malloc(sizeof(char) * (size + size2 + 1));
-if (r == NULL)
+char *strDup;
+int i;
+unsigned int j;
+if (s1 == NULL)
+s1 = "";
+if (s2 == NULL)
+s2 = "";
+i = 0;
+while (s1[i] != '\0')
+i++;
+strDup = malloc(sizeof(char) * (i + n + 1));
+if (strDup == NULL)
 return (NULL);
-for (i = 0; i < size; i++)
-r[i] = s1[i];
-for (i = 0; i < size2; i++)
-r[i + size] = s2[i];
-r[size + size2] = '\0';
-return (r);
+i = j = 0;
+while (s1[i] != '\0')
+{
+strDup[i] = s1[i];
+i++;
+}
+while (j < n && s2[j] != '\0')
+{
+strDup[i] = s2[j];
+i++, j++;
+}
+strDup[i] = '\0';
+return (strDup);
 }
