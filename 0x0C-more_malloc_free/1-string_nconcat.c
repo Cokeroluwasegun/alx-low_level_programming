@@ -1,24 +1,25 @@
 #include "main.h"
-#include <stdlib.h>
 #include <stdio.h>
+#include <stdlib.h>
 #include <limits.h>
+
 /**
-* string_nconcat - concatenate two strings
-* @s1: strings
-* @s2: string
-* @n: unsigned int
-* Return: Pointer
+* string_nconcat - check the code for Holberton School students.
+* @s1: qsdqsdq
+* @s2: qsdqsdq
+* @n: qsdqsdq
+* Return: Always 0.
 */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-unsigned int sizes1 = 0;
+unsigned int size = 0;
 unsigned int size2 = 0;
 unsigned int i = 0;
 char *r;
 if (s1 != NULL)
 {
-while (s1[sizes1] != '\0')
-sizes1++;
+while (s1[size] != '\0')
+size++;
 }
 if (s2 != NULL)
 {
@@ -29,13 +30,13 @@ if (n > size2)
 n = size2;
 else
 size2 = n;
-r = malloc(sizeof(char) * (sizes1 + size2 + 1));
+r = malloc(sizeof(char) * (size + size2 + 1));
 if (r == NULL)
 return (NULL);
-for (i = 0; i < sizes1; i++)
+for (i = 0; i < size; i++)
 r[i] = s1[i];
 for (i = 0; i < size2; i++)
-r[i + sizes1] = s2[i];
-r[sizes1 + size2] = '\0';
+r[i + size] = s2[i];
+r[size + size2] = '\0';
 return (r);
 }
