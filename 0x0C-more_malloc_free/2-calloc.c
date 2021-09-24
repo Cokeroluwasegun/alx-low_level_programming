@@ -1,23 +1,22 @@
 #include "main.h"
 #include <stdlib.h>
-#include <stdio.h>
-#include <limits.h>
 /**
-* _calloc - concatenate two strings
-* @nmemb: strings
-* @size: int
-* Return: Pointer
-*/
+ *_calloc - allocates memory for an array
+ *@nmemb: integer
+ *@size: integer
+ *
+ *Return: pointer
+ */
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
 unsigned int i;
 char *c;
-if (nmemb <= 0 || size <= 0)
+if (nmemb == 0 || size == 0)
 return (NULL);
 c = malloc(nmemb * size);
-if (c == NULL)
+if (c == 0)
 return (NULL);
-for (i = 0; i < size * nmemb; i++)
+for (i = 0; i < nmemb * size; i++)
 c[i] = 0;
 return (c);
 }

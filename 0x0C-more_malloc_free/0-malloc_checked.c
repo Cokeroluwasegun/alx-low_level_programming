@@ -1,19 +1,14 @@
 #include "main.h"
-#include <stdio.h>
-#include <stdlib.h>
-#include <limits.h>
 /**
-* malloc_checked - check the code for Holberton School students.
-* @b: qsdqsdq
-* Return: Always 0.
-*/
+ * malloc_checked - allocates memory using malloc
+ * @b: number of bytes to be malloced
+ * Return: returns a void pointer
+ */
 void *malloc_checked(unsigned int b)
 {
-void *r;
-r = malloc(b);
-if (r == NULL)
-{
+void *ptr;
+ptr = malloc(b);
+if (!ptr)
 exit(98);
-}
-return (r);
+return (ptr);
 }
