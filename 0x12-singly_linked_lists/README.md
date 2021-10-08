@@ -1,1 +1,1 @@
- This is a README.d file
+This is a README.md file
