@@ -6,7 +6,7 @@
 * @str: string to store in the list.
 * Return: adress
 */
-list *add_node(list_t **head, const char *str)
+list_t *add_node(list_t **head, const char *str)
 {
 list_t *n;
 size_t x;
@@ -17,7 +17,7 @@ n->str =strdup(str);
 for (x = 0; str[x]; x++)
 ;
 n->len = x;
-n-next = *head;
+n->next = *head;
 *head =n;
 return (*head);
 }
