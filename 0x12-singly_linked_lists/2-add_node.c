@@ -6,7 +6,7 @@
 * @str: string to store in the list.
 * Return: adress
 */
-list *add-node(list_t **head, const char *str)
+list *add_node(list_t **head, const char *str)
 {
 list_t *n;
 size_t x;
