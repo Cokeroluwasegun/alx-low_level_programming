@@ -1,4 +1,4 @@
-#include "holberton.h"
+#include "main.h"
 /**
  * get_bit - function that returns the value of a bit
  * @n: unsigned long int
