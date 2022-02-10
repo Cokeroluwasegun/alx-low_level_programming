@@ -26,7 +26,6 @@ def island_perimeter(grid):
                     west = grid[i][j-1]
                 else:
                     west = 0
-
                 if north == 0:
                     perimeter += 1
                 if east == 0:
