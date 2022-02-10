@@ -1,42 +1,38 @@
 #!/usr/bin/python3
 """
-returns the perimeter of the island described in grid:
-grid is a list of list of integers:
-- 0 represents a water zone
-- 1 represents a land zone
-- One cell is a square with side length 1
-- Grid cells are connected horizontally/vertically (not diagonally).
-- Grid is rectangular, width and height don’t exceed 100
-* Grid is completely surrounded by water, and there is one island (or nothing).
-* The island doesn’t have “lakes” (water inside that isn’t connected to the
-water around the island).
+5-island_perimeter.py
 """
 def island_perimeter(grid):
     """
-returns the perimeter of the island described in grid:
-grid is a list of list of integers:
-- 0 represents a water zone
-- 1 represents a land zone
-- One cell is a square with side length 1
-- Grid cells are connected horizontally/vertically (not diagonally).
-- Grid is rectangular, width and height don’t exceed 100
-* Grid is completely surrounded by water, and there is one island (or nothing).
-* The island doesn’t have “lakes” (water inside that isn’t connected to the
-water around the island).
-"""
-    for y in range(len(grid)):
-        for x in range(len(grid[y])):
-            if grid[y][x] == 1:
-                try:
-                    if x == 0 or grid[y][x - 1] == 0:
-                        width += 1
-                    if x == len(grid[y]) - 1 or grid[y][x + 1] == 0:
-                        width += 1
-                    if y == 0 or grid[y - 1][x] == 0:
-                        height += 1
-                    if y == len(grid) - 1 or grid[y + 1][x] == 0:
-                        height += 1
-                except:
-                    pass
-    perimeter = width + height
-    return (perimeter)
+    compute perimeter of island in a grid
+    """
+    perimeter = 0
+    for i in range(len(grid)):
+        for j in range(len(grid[i])):
+            if grid[i][j] == 1:
+                if i > 0:
+                    north = grid[i-1][j]
+                else:
+                    north = 0
+                if j < len(grid[i]) - 1:
+                    east = grid[i][j+1]
+                else:
+                    east = 0
+                if i == len(grid) - 1:
+                    south = 0
+                else:
+                    south = grid[i+1][j]
+                if j > 0:
+                    west = grid[i][j-1]
+                else:
+                    west = 0
+
+                if north == 0:
+                    perimeter += 1
+                if east == 0:
+                    perimeter += 1
+                if south == 0:
+                    perimeter += 1
+                if west == 0:
+                    perimeter += 1
+    return perimeter
